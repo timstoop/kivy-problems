@@ -10,8 +10,8 @@ class MyFirstScreen(Screen):
     y = 5
 
     def on_leave(self, *args):
-# Here I want to say something like "next screen should have variable x set to my variable y"
-
+        # Here I want to say something like "next screen should have variable x set to my variable y"
+        pass
 
 class MySecondScreen(Screen):
     pass
