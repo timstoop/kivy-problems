@@ -1,0 +1,31 @@
+<MyScreenManager>:
+    MyFirstScreen:
+    MySecondScreen:
+
+<MyFirstScreen>:
+    name: 'first'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Best game evar! Press X to win!'
+        Label:
+            text: str(app.score)
+        Button:
+            text: "X"
+            on_release: app.score += 1
+        Button:
+            text: "End Game"
+            on_release: app.root.current = 'second'
+
+<MySecondScreen>:
+    name: 'second'
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: "You win! Score: {0}".format(app.score)
+        Button:
+            text: "Resume playing!"
+            on_release: app.root.current = 'first'
+        Button:
+            text: "Clear score"
+            on_release: app.score = 0

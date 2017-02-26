@@ -7,3 +7,7 @@ In the code, I made two examples. One is directly in the Python code (passing y 
 Currently, I solve this by storing that kind of data in the top level App, but it seems kludgy. Any hints on how to do this better?
 
 (Having the reference the other way around would work for me as well, of course. For instance, if MySecondScreen had a short cut to request the value of y from MyFirstScreen, that solves the problem as well.)
+
+# Solution provided by Fuyou
+
+Store it all in the top level app and access it directly. The latter was what I wasn't doing, but I probably should do.
