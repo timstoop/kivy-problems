@@ -1,0 +1,18 @@
+<MyScreenManager>:
+    MyFirstScreen:
+    MySecondScreen:
+
+<MyFirstScreen>:
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            id: settableLabel
+            text: 'Just imagine this text being variable or settable or something'
+        Button:
+            on_release: app.root.current = 'second'
+
+<MySecondScreen>:
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'I want to show that text here'
